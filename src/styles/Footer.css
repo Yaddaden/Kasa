@@ -1,0 +1,21 @@
+.footer
+{
+    background-color: black;
+    height: 209px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+   
+}
+.footer-logo
+{
+    width: 122px;
+    padding-block: 66px 20px;
+}
+.footer-text
+{
+    color: #fff;
+    margin-bottom: 30px;
+}
