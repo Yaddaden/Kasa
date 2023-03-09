@@ -1,6 +1,47 @@
-h1
+.homeTitle
 {
     position: absolute;
-   display: flex;  
-   color: white;
+    display: flex;  
+    color: white;
+    font-size: 48px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+ .cards 
+{ 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 50px;
+    background: #f7f7f7;
+    border-radius: 25px;
+    margin-block: 50px;
+  
+}
+
+@media screen and (max-width:1005px){
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:768px){
+     
+       
+    .home .banner  {
+        border-radius: 10px;
+        height: 111px;
+    
+    }
+    .homeTitle {
+        font-size: 24px;
+        flex-wrap: wrap;
+        margin-inline: 16px ;
+    }
+    .cards{
+        grid-template-columns: 1fr;
+        background: none;
+        padding: 0;
+        gap: 22px;
+    }
 }

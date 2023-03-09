@@ -19,3 +19,9 @@
     color: #fff;
     margin-bottom: 30px;
 }
+
+@media screen and (max-width:768px){
+    .footer-text{
+     margin-bottom: 60px;
+   } 
+}

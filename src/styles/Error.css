@@ -1,0 +1,44 @@
+.error
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #ff6060;
+    height: 100%;
+
+}
+.error404
+{
+    font-size: 288px;
+    font-weight: bold;
+
+}
+.titleError
+{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 36px;
+    white-space: nowrap;
+    justify-content: center;
+}
+.backToHome
+{
+    margin: 80px auto 120px;
+    font-size: 18px;
+    color: #ff6060;
+    font-weight: 500;
+}
+@media screen and (max-width: 768px)
+{
+    .error404{ 
+        font-size: 96px;
+
+    }
+    .titleError{
+        font-size: 18px;
+    }
+    .backToHome{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,41 @@
+.card
+{
+display: flex;
+position: relative;
+cursor: pointer;
+overflow: hidden;
+border-radius: 25px;
+height: 340px;
+}
+.card::after
+{
+    position: absolute;
+    inset: 0;
+    content: "";
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.card img
+{
+   object-fit: cover;
+    
+    height: 100%;
+}
+ .titre 
+{
+    font-weight: 500;
+    font-size: 18px;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    color: white;
+    margin:20px;
+}
+@media screen and (max-width:768px)
+{
+    .card{
+        height: 255px;
+      
+    }
+}

@@ -12,11 +12,13 @@ body
 font-family: "Montserrat", sans-serif;
 height: 100%;
 }
+
 .mainContainer
 {
 max-width: 1280px;
 margin-inline: auto;
 flex: 1 1;
+padding-inline:20px;
 }
 
 img{
@@ -27,4 +29,10 @@ img{
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+@media screen and (max-width:1005px){
+  main{
+     padding: 20px;
+ } 
 }

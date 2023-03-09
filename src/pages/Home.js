@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <div className="home">
         <Banner>
-          <h1>
+          <h1 className="homeTitle">
             <span>Chez vous,&nbsp;</span>
             <span>partout et ailleurs</span>{" "}
           </h1>
