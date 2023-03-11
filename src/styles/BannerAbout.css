@@ -1,0 +1,29 @@
+.bannerAbout{
+    overflow: hidden;
+	max-height: 223px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+     
+}
+.bannerAbout img {
+    object-fit: cover;     
+}
+.bannerAbout::before{
+    position: absolute;
+    content: "";
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3; 
+    inset: 0;
+}
+
+@media screen and (max-width:768px)
+{
+    .banner{
+        border-radius: 10px;  
+    }
+}
+
