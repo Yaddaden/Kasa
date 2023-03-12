@@ -1,0 +1,65 @@
+.barCollaps{
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    width: 85%;
+    margin: 0 auto;
+
+}
+.titleCollaps-fleche{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+    color: #FFFFFF;
+    background: #ff6060;
+    padding: 3px 6px;
+    border-radius: 5px;
+    height: 47px;
+    cursor: pointer;
+}
+.titleCollaps-fleche img{
+    width: 30px;
+}
+.titleCollaps{
+    font-weight: 500;
+    font-size: 24px;
+    line-height:34.22px;
+    padding-top:5.75px ;
+    padding-left: 18.08px;
+    
+    }
+    .textCollaps{
+    color: #ff6060;
+    background:#F7F7F7 ;
+    height: auto;
+    padding: 38px 40px 6px 15px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height:34.22px ;
+    }
+    @media screen and (max-width:768px){ 
+
+        .barCollaps{
+            width: auto; 
+            padding-right: 0;
+             padding-left: 0;
+        }
+        .titleCollaps{
+            font-size: 13px;
+            line-height: 18.54px;
+            height: 30px;
+        }
+        .textCollaps{
+            font-size: 14px;
+            line-height: 17.11px;
+            height: auto;
+            padding: 24px;
+        }
+        .titleCollaps-fleche img{
+            width: 22px;
+        }
+       
+        
+    }
