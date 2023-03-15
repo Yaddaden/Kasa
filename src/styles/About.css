@@ -1,14 +1,21 @@
 .container{
     display: flex;
     justify-content: center;
+    padding: 3% 8%;
 }
 
 .bloc{
    width: 100%; 
    align-items: center;
    margin-bottom: 100px;  
+   
 }
 
+@media screen and (max-width:768px){
+    .container{
+padding: 0;
+    }
+}
 
 
 

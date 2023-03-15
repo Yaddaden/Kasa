@@ -14,10 +14,8 @@ const About = () => {
 
       <div className="container">
         <div className="bloc">
-          {Data.map((val) => (
-            <>
-              <Collapse {...val} />
-            </>
+          {Data.map((val, k) => (
+            <Collapse key={k} {...val} />
           ))}
         </div>
       </div>

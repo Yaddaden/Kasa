@@ -14,9 +14,9 @@ const Collapse = ({ title, content }) => {
       <div className="barCollaps">
         <div className="titleCollaps-fleche" onClick={display}>
           <h1 className="titleCollaps">{title}</h1>
-          <img src={!text ? flecheUp : flecheDn} alt="fermer" />
+          <img src={!text ? flecheUp : flecheDn} alt="ouvrir fermer" />
         </div>
-        {text && <p className="textCollaps">{content}</p>}
+        {text && <div className="textCollaps">{content}</div>}
       </div>
     </>
   );

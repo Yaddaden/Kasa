@@ -1,10 +1,9 @@
 .barCollaps{
     justify-content: space-between;
     align-items: center;
-    padding: 15px 10px;
-    width: 85%;
+    padding: 20px 0;
+    width: 100%;
     margin: 0 auto;
-
 }
 .titleCollaps-fleche{
     display: flex;
@@ -42,9 +41,9 @@
     @media screen and (max-width:768px){ 
 
         .barCollaps{
-            width: auto; 
             padding-right: 0;
-             padding-left: 0;
+             padding-left: 0; 
+             width: 100%;
         }
         .titleCollaps{
             font-size: 13px;
@@ -61,5 +60,4 @@
             width: 22px;
         }
        
-        
     }
