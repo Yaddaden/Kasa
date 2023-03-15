@@ -3,6 +3,9 @@ import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
 import logements from "../logements.json";
+import FicheTag from "../components/FicheTag";
+import FicheStars from "../components/FicheStars";
+import Profile from "../components/Profile";
 import "../styles/FicheL.css";
 
 const FicheL = () => {
@@ -24,9 +27,19 @@ const FicheL = () => {
     <>
       <div className="ficheLogement">
         <Carrousel pictures={pictures} />
-        <div className="wrapperTitle">
-          <h1>{title}</h1>
-          <p>{location}</p>
+        <div className="profileRating">
+          <div className="wrapperTitle">
+            <h1 className="ficheTitle">{title}</h1>
+            <p className="ficheText">{location}</p>
+            <div className="buttonTags">
+              {tags && tags.map((t, k) => <FicheTag name={t} key={k} />)}
+            </div>
+          </div>
+
+          <div className="hostInfo">
+            <Profile host={host} />
+            <FicheStars rating={rating} />
+          </div>
         </div>
         <div className="wrapperCollapse">
           <Collapse title="Description" content={description} />

@@ -1,0 +1,24 @@
+.hostInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.host{
+    display: flex;
+ align-items: center;
+ gap: 10px;
+
+}
+.name{
+    text-align: right;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff6060;
+
+}
+.profilePhoto {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
