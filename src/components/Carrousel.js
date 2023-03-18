@@ -4,7 +4,6 @@ import flecheDroite from "../assets/flecheDroite.png";
 import flecheGauche from "../assets/flecheGauche.png";
 
 const Carrousel = ({ pictures }) => {
-  //const { pictures } = data;
   const [activeSlide, setActiveSlide] = useState(0);
 
   const nextSlide = () => {

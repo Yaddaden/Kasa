@@ -1,5 +1,4 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
 import logements from "../logements.json";
@@ -10,8 +9,14 @@ import "../styles/FicheL.css";
 
 const FicheL = () => {
   document.title = "kasa - Fiche logement";
-
+  // Recuperation du id
   const { id } = useParams();
+  const data = logements.find((logement) => logement.id === id);
+  // Au cas d'erreur sur lurl on accède à la page d'erreur 404
+  if (data === undefined) {
+    return <Navigate to="/error" />;
+  }
+  //Affectation des données récupérés depuis le fichier (logement.json)
   const {
     title,
     pictures,
@@ -21,10 +26,12 @@ const FicheL = () => {
     location,
     equipments,
     tags,
-  } = logements.find((logement) => logement.id === id);
+  } = data;
 
   return (
     <>
+      {/* //Affichage des photos, le titre de la location et l'adresse
+      //Récupération de la valeur et la clé du tableau tags */}
       <div className="ficheLogement">
         <Carrousel pictures={pictures} />
         <div className="profileRating">
@@ -35,7 +42,7 @@ const FicheL = () => {
               {tags && tags.map((t, k) => <FicheTag name={t} key={k} />)}
             </div>
           </div>
-
+          {/* Création du profil utilisateur et les étoiles */}
           <div className="hostInfo">
             <Profile host={host} />
             <FicheStars rating={rating} />
@@ -45,9 +52,7 @@ const FicheL = () => {
           <Collapse title="Description" content={description} />
           <Collapse
             title="Equipements"
-            content={equipments.map((e, k) => (
-              <p key={k}>{e}</p>
-            ))}
+            content={equipments && equipments.map((e, k) => <p key={k}>{e}</p>)}
           />
         </div>
       </div>

@@ -6,6 +6,7 @@
     justify-content:space-between;
     width: 100%;
     margin-top: 20px;
+   
 }
 
 .wrapperTitle{
@@ -33,7 +34,7 @@
 
 .wrapperCollapse{
     display: flex;
-    gap: 20px;
+    gap: 50px;
     justify-content: space-between;
     flex-direction: row;   
 }
@@ -42,5 +43,18 @@
     .wrapperCollapse{
         display: flex;
         flex-direction: column;
+        gap: 0;
+    }
+    .profileRating{
+        display: flex;
+        flex-direction: column;
+    }
+    .ficheTitle{
+        font-size: 18px;
+        line-height: 25.67px;
+    }
+    .ficheText{
+        font-size: 14px;
+        line-height: 19.96px;
     }
 }

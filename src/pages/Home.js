@@ -8,6 +8,7 @@ const Home = () => {
   document.title = "kasa - Accueil";
 
   return (
+    // Création de banniere home et son titre.
     <>
       <div className="home">
         <Banner>
@@ -17,6 +18,7 @@ const Home = () => {
           </h1>
         </Banner>
       </div>
+      {/* Récupération des données depuis le fichier (logements.json=) */}
       <div className="cards">
         {logements.map((card) => (
           <Card data={card} key={card.id} />
