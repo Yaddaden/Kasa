@@ -8,11 +8,11 @@ const About = () => {
 
   return (
     <>
-      {/* Création de la bannière About */}
+      {/* Utilisation de la bannière About */}
       <div className="bannerAbout">
         <BannerAbout />
       </div>
-      {/* Récupération des données depuis fichier (Data) vers les Collapses */}
+      {/* Récupération des données depuis le fichier (Data) vers les Collapses */}
       <div className="container">
         <div className="bloc">
           {Data.map((val, k) => (

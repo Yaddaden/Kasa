@@ -5,10 +5,12 @@ import logo from "../assets/LOGO.png";
 
 const Header = () => {
   return (
+    //Creation de logo header cliquable
     <header className="header">
       <Link to="/" aria-label="accueil">
         <img src={logo} alt="logo" className="logo" />
       </Link>
+      {/* Création de barre de navigation (accueil) & (A propos) */}
       <nav>
         <NavLink
           className={({ isActive }) => (isActive ? "link link-actif" : "link")}

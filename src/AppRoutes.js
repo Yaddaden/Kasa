@@ -5,6 +5,7 @@ import Error from "./pages/Error";
 import FicheL from "./pages/FicheL";
 import Home from "./pages/Home";
 
+//Fixer les routes pour chaque page
 const AppRoutes = () => {
   return (
     <Routes>

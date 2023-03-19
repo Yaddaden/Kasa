@@ -6,6 +6,7 @@ import "../styles/FicheStars.css";
 const FicheStars = ({ rating }) => {
   const arrayStars = [1, 2, 3, 4, 5];
   return (
+    //Affichage conditionnel des étoiles en score, de couleur rose(etoileR) ou grise (etoileG) selon le score passé en props.
     <div className="stars">
       {arrayStars.map((i) => {
         const value = i++;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/Card.css";
 
 // Création de lien pour accèder à la page fiche-Logement
-// Création de titre et l'image avec leur id
+// Récupèrez les couvertures et titres depuis home
 const Card = ({ data }) => {
   const { id, title, cover } = data;
   return (

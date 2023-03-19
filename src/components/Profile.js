@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Profile.css";
 
+//Création du profil du propriétaire
 const Profile = ({ host }) => {
   return (
     <div className="host">

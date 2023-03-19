@@ -16,7 +16,7 @@ const FicheL = () => {
   if (data === undefined) {
     return <Navigate to="/error" />;
   }
-  //Affectation des données récupérés depuis le fichier (logement.json)
+  //destructuration de (data) récupérés depuis le fichier (logement.json)
   const {
     title,
     pictures,
@@ -48,6 +48,8 @@ const FicheL = () => {
             <FicheStars rating={rating} />
           </div>
         </div>
+        {/* Création de Collapse (Description) & (Equipements). 
+        Récuperation du tableau (equipments) et sa clé. */}
         <div className="wrapperCollapse">
           <Collapse title="Description" content={description} />
           <Collapse
