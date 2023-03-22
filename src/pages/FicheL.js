@@ -1,10 +1,11 @@
-import { Navigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
 import logements from "../logements.json";
 import FicheTag from "../components/FicheTag";
 import FicheStars from "../components/FicheStars";
 import Profile from "../components/Profile";
+import Error from "../pages/Error";
 import "../styles/FicheL.css";
 
 const FicheL = () => {
@@ -14,7 +15,7 @@ const FicheL = () => {
   const data = logements.find((logement) => logement.id === id);
   // Au cas d'erreur sur lurl on accède à la page d'erreur 404
   if (data === undefined) {
-    return <Navigate to="/error" />;
+    return <Error />;
   }
   //destructuration de (data) récupérés depuis le fichier (logement.json)
   const {
